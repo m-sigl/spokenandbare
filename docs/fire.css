@@ -1,74 +1,59 @@
-/* fire.css - Styles for the Fire page of Spoken and Bare */
+/* fire.css */
 
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-color: #0f0f0f;
-  color: #f5f5f5;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
 }
 
-.hero {
+.banner {
   position: relative;
   height: 100vh;
-  background-image: url('assets/fire-banner.png'); /* Update this path to match your repo */
+  background-image: url('assets/fire-banner.png');
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+}
+
+.overlay-text {
+  background: rgba(0, 0, 0, 0.55);
+  color: #f2f2f2;
+  padding: 2rem;
   text-align: center;
-  padding: 0 20px;
+  width: 100%;
 }
 
-.hero-text {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 800px;
-  box-shadow: 0 0 20px rgba(255, 100, 50, 0.4);
-}
-
-.hero-text h1 {
+.overlay-text h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #ff944d;
+  margin: 0;
+  color: #ffddb3;
 }
 
-.hero-text p {
+.overlay-text p {
   font-size: 1.2rem;
-  line-height: 1.5;
-  color: #eaeaea;
+  color: #f8d4aa;
+  margin-top: 0.5rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+main.content {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px rgba(255, 140, 50, 0.1);
 }
 
-.card {
-  background: #1b1b1b;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 0 12px rgba(255, 80, 40, 0.3);
-  transition: transform 0.3s ease;
+h2 {
+  color: #ffa766;
+  font-weight: normal;
+  margin-top: 2rem;
 }
 
-.card:hover {
-  transform: scale(1.03);
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #ff744d;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #cccccc;
+p {
+  margin-bottom: 1.5rem;
+  color: #ddd;
 }
