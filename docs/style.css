@@ -1,0 +1,43 @@
+/* Base background and text */
+body {
+  background-color: #0b0b0b;
+  color: #fcefdc;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #fce3b8;
+}
+
+/* Accent Color for links/buttons */
+a, .button, .enter-btn {
+  background-color: #e89a45;
+  color: #0b0b0b;
+  border: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover, .button:hover, .enter-btn:hover {
+  background-color: #f8b35a;
+  color: #000;
+}
+
+/* Cards */
+.card {
+  background-color: #141414;
+  border: 1px solid #222;
+  box-shadow: 0 0 10px rgba(232, 154, 69, 0.15);
+}
+
+/* Optional: box hover animation */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(232, 154, 69, 0.3);
+}
