@@ -1,0 +1,16 @@
+.hero {
+  background: url('PATH_TO_IMAGE.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8e2d4;
+  text-shadow: 0 0 10px #000;
+}
+.overlay-text {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
