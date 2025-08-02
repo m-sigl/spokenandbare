@@ -12,27 +12,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fce3b8;
 }
 
-/* Accent Color for links/buttons */
-a, .button, .enter-btn {
-  background-color: #e89a45;
-  color: #0b0b0b;
-  border: none;
-  padding: 8px 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-a:hover, .button:hover, .enter-btn:hover {
-  background-color: #f8b35a;
-  color: #000;
-}
-
 /* Layout container for nav cards */
 .nav-container {
   display: flex;
@@ -60,6 +39,13 @@ a:hover, .button:hover, .enter-btn:hover {
   box-shadow: 0 0 15px rgba(232, 154, 69, 0.3);
 }
 
+/* Paragraphs in nav cards */
+.nav-card p {
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+  color: #d5c8b3;
+}
+
 /* Header styling */
 header {
   text-align: center;
@@ -81,17 +67,50 @@ header p {
   margin-top: 10px;
 }
 
-/* Paragraphs in nav cards */
-.nav-card p {
-  font-family: 'Georgia', serif;
-  font-size: 0.95rem;
-  color: #d5c8b3;
-}
-
 /* Footer */
 footer {
   text-align: center;
   padding: 40px 20px;
   font-size: 0.9rem;
   color: #888;
+}
+
+/* Accent Color for links/buttons */
+a, .button, .enter-btn {
+  background-color: #e89a45;
+  color: #0b0b0b;
+  border: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Hover state for all buttons/links */
+a:hover, .button:hover, .enter-btn:hover {
+  background-color: #f8b35a;
+  color: #000;
+}
+
+/* Utility class for stacked links inside cards */
+.button-link {
+  display: inline-block;
+  margin: 8px auto 0;
+  padding: 8px 14px;
+  background-color: #e89a45;
+  color: #0b0b0b;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #f8b35a;
+  color: #000;
 }
